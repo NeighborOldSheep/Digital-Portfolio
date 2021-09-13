@@ -1,0 +1,90 @@
+body{
+    background: linear-gradient(to right, #214ae0, #2ebb96);
+    height: 100vh;
+}
+
+
+/* ----------- Nav Menu ------------ */
+
+/* btn */
+h3{
+    color: #cfd8dc;
+    position: fixed;
+    top: calc(50vh - 40px);
+    left: calc(50vw - 126px);
+    font-size: 60px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+h3:hover{
+    border-bottom: 6px dotted #cfd8dc;
+    padding-bottom: 10px;
+    top: calc(50vh - 50px);
+}
+
+/* Nav Menu */
+.nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    position: fixed;
+    top: calc(50vh - 247px);
+    left: calc(50vw - 150px);
+    background-color: #1d1f20;
+    border-radius: 20px;
+    transition: all 0.75s;
+    transform: scale(0) rotate(360deg);
+    box-shadow: 0 0 60px -15px black;
+}
+
+.nav-container.active{
+    transform: scale(1) rotate(0deg);
+}
+
+/* close btn */
+.nav-container .close{
+    color: #cfd8dc;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-container .close:hover{
+    border-bottom: 2px dotted #cfd8dc;
+    padding-bottom: 5px;
+}
+
+/* Nav Menu Info */
+.nav-container .nav{
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+.nav-container .nav li{
+    padding: 20px;
+    text-indent: 5px;
+    border-left: 1px solid #4d4d4c;
+    margin-left: 30px;
+}
+
+.nav-container .nav li a{
+    color: #ae94c0;
+}
+
+.nav-container .nav li a:hover{
+    color: #dd925f;
+}
+
+.nav-container .nav .home{
+    text-indent: 0;
+    border: none;
+    margin-left: -25px;
+}
+
+.nav-container .nav .home a{
+    color: #efc371;
+}
