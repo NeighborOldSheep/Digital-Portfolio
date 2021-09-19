@@ -1,16 +1,3 @@
-body{
-    background-image: url("../img/bg.jpg");
-    min-height: 100vh;
-}
-
-
-
-/* ----------info content---------- */
-.content-wrapper .content .title{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 120px;
-}
 
 /* lefr side main info */
 .content-wrapper .info{

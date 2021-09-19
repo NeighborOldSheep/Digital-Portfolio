@@ -12,8 +12,11 @@ a{
 }
 
 body{
+    background-image: url("../img/bg.jpg");
+    min-height: 100vh;
     position: relative;
 }
+
 
 /* ---------- Header Part -----------*/
 .header-wrapper{
@@ -40,6 +43,14 @@ body{
 
 .header li a:hover{
     color: #ff6700;
+}
+
+
+/* ----------info content---------- */
+.content-wrapper .content .title{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 
