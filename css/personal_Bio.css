@@ -3,54 +3,73 @@ body{
     min-height: 100vh;
 }
 
-/* Header Part */
-.header-wrapper{
-    background-color: #333;
-    display: flex;
-    height: 80px;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1000px;
-    margin: 0 auto;
-}
-
-.header li{
-    line-height: 80px;
-}
-
-.header li a{
-    color: #dcdcdc;
-}
-
-.header li a:hover{
-    color: #ff6700;
-}
 
 
 /* ----------info content---------- */
 .content-wrapper .content .title{
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 150px;
+    margin-top: 50px;
+    margin-bottom: 120px;
 }
 
-/* main info */
+/* lefr side main info */
 .content-wrapper .info{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0,0,0,.7);
-    width: 60vw;
+    width: 53vw;
     margin: 0 auto;
     color: whitesmoke;
+    padding: 25px 0;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+}
+
+.content-wrapper .info .left{
+    margin-right: 5vw;
 }
 
 .content-wrapper .info .left .top{
     border-bottom: 2px solid #dcdcdc;
+    margin-bottom: 20px;
+    font-size: 26px;
 }
 
+.content-wrapper .info .left .top p{
+    margin-bottom: 10px;
+}
 
+.content-wrapper .info .left .top span{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.content-wrapper .info .left .main-info li{
+    margin-bottom: 15px;
+}
+
+.content-wrapper .info .left .main-info .title{
+    font-size: 20px;
+}
+
+.content-wrapper .info .left .main-info .name{
+    text-indent: 15px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.content-wrapper .info .left .main-info .name:hover{
+    color: #bfc;
+}
+
+/* right side profile picture */
+.content-wrapper .info .right .img{
+    transform: scale(1);
+    transition: all .3s;
+}
+
+.content-wrapper .info .right .img:hover{
+    transform: scale(1.15);
+}

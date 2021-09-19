@@ -10,3 +10,47 @@ a{
     margin: 0;
     padding: 0;
 }
+
+body{
+    position: relative;
+}
+
+/* ---------- Header Part -----------*/
+.header-wrapper{
+    background-color: #333;
+    display: flex;
+    height: 80px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header li{
+    line-height: 80px;
+}
+
+.header li a{
+    color: #dcdcdc;
+}
+
+.header li a:hover{
+    color: #ff6700;
+}
+
+
+/* ----------Footer Part ---------- */
+.footer-wrapper{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #333;
+    color: #dcdcdc;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
