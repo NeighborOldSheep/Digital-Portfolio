@@ -1,0 +1,349 @@
+.content-wrapper .content .title{
+    margin-bottom: 0;
+}
+
+/* ----------Resume---------- */
+.content-wrapper .resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    /* margin-top: -30px; */
+}
+
+/* left side infomation */
+.content-wrapper .resume .left{
+    /* background-color: rgb(231,235,244); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 头像设置 */
+.content-wrapper .resume .left .profile{
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.content-wrapper .resume .left .profile img{
+    border-radius: 50%;
+    transition: all .5s;
+    transform: scale(1);
+}
+
+.content-wrapper .resume .left .profile img:hover{
+    transform: scale(1.1);
+}
+
+/* skill */
+.content-wrapper .resume .left h3{
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    border-bottom: 1px solid #333;
+    display: block;
+}
+
+.content-wrapper .resume .left .skill{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.content-wrapper .resume .left .skills:hover .skill{
+    opacity: 0.05;
+}
+
+.content-wrapper .resume .left:hover .skill:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.content-wrapper .resume .left .skill:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+
+/* 左侧skill名称 */
+.content-wrapper .resume .left .skill .name{
+    position: relative;
+    width: 120px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+/* 右侧百分比 */
+.content-wrapper .resume .left .skill .value{
+    position: relative;
+    width: 40px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+/* 进度条框 */
+.content-wrapper .resume .left .skill .percent{
+    position: relative;
+    width: 200px;
+    height: 16px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+}
+
+/* 进度条动画 */
+.content-wrapper .resume .left .skill .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: aanimate 4s ease-in-out forwards;
+}
+@keyframes animate{
+    from{
+        width: 0;
+    }
+}
+
+/* 设置各个进度条颜色 */
+.content-wrapper .resume .left .skill:nth-child(1) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    width: 90%;
+}
+
+.content-wrapper .resume .left .skill:nth-child(2) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+    width: 70%;
+}
+
+.content-wrapper .resume .left .skill:nth-child(3) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+    width: 40%;
+}
+
+.content-wrapper .resume .left .skill:nth-child(4) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+    width: 50%;
+}
+
+.content-wrapper .resume .left .skill:nth-child(5) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    width: 90%;
+}
+
+.content-wrapper .resume .left .skill:nth-child(6) .percent .progress{
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+    width: 30%;
+}
+
+
+/* --------- right side infomation ----------- */
+.content-wrapper .resume .right{
+    /* background-color: rgb(250,250,250); */
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /*  margin-top: -120px; */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 基础信息 */
+.content-wrapper .resume .right .base-info{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.content-wrapper .resume .right .base-info div{
+    margin-top: 20px;
+}
+
+.content-wrapper .resume .right .base-info div span{
+    margin-left: 15px;
+}
+
+.content-wrapper .resume .right .base-info h2{
+    font-size: 34px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #333;
+}
+
+.content-wrapper .resume .right .base-info h2:hover,
+.content-wrapper .resume .right .base-info div span:hover{
+    color: rebeccapurple;
+}
+
+/* 关于我 */
+.content-wrapper .resume .right .about-me{
+    border-top: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-wrapper .resume .right .about-me .education,
+.content-wrapper .resume .right .about-me .language{
+    margin-top: 10px;
+}
+
+/* Education */
+.content-wrapper .resume .right .about-me .education h3{
+    font-size: 26px; 
+}
+
+.content-wrapper .resume .right .about-me .education p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Language */
+.content-wrapper .resume .right .about-me .language h3{
+    font-size: 26px;
+}
+
+.content-wrapper .resume .right .skill{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#616161 0%, #333 10%, #222);;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #000;
+    transition: 0.5s;
+}
+
+.content-wrapper .resume .right .skills:hover .skill{
+    opacity: 0.05;
+}
+
+.content-wrapper .resume .right:hover .skill:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.content-wrapper .resume .right .skill:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, .1);
+    z-index: 10;
+}
+
+/* 左侧skill名称 */
+.content-wrapper .resume .right .skill .name{
+    position: relative;
+    width: 120px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+/* 右侧百分比 */
+.content-wrapper .resume .right .skill .value{
+    position: relative;
+    width: 40px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+/* 进度条框 */
+.content-wrapper .resume .right .skill .percent{
+    position: relative;
+    width: 200px;
+    height: 16px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+}
+
+/* 进度条动画 */
+.content-wrapper .resume .right .skill .progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: aanimate 4s ease-in-out forwards;
+}
+
+.content-wrapper .resume .right .skill:nth-child(1) .percent .progress{
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+    width: 100%;
+}
+
+.content-wrapper .resume .right .skill:nth-child(2) .percent .progress{
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+    width: 65%;
+}
+
+/* Experience */
+.content-wrapper .resume .right .ex{
+    border-top: 3px solid #333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-wrapper .resume .right .ex .compus,
+.content-wrapper .resume .right .ex .acting-ex{
+    margin-top: 10px;
+}
+
+.content-wrapper .resume .right .ex .compus h3,
+.content-wrapper .resume .right .ex .acting-ex h3{
+    font-size: 26px;
+}
+
+.content-wrapper .resume .right .ex .compus p,
+.content-wrapper .resume .right .ex .acting-ex p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}

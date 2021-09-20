@@ -17,12 +17,21 @@ window.onload = function () {
         //为每一个超链接都添加一个num属性
         li[i].num = i;
 
-        //为超链接绑定单机响应函数
+        
+        /* 
+            为超链接绑定单机响应函数：
+                当li被点击时 
+                    main display为none
+                    answer-box display为block
+                    所有带answer类的元素添加新的class active
+                    content 添加新的active类
+        */
         li[i].onclick = function () {
 
             /* 获取当前点击的索引并将其为设置为index */
             index = this.num;
-
+            
+            //遍历获取所有answe
             for (var j = 0; j < answer.length; j++) {
                 answer[index].classList.add("active");
                 main.style.display = "none";
