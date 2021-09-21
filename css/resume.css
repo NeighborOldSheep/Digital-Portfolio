@@ -1,3 +1,7 @@
+body{
+    min-height: 100vh;
+}
+
 .content-wrapper .content .title{
     margin-bottom: 0;
 }
@@ -8,8 +12,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    min-height: 100vh;
-    /* margin-top: -30px; */
 }
 
 /* left side infomation */
@@ -137,17 +139,17 @@
 
 .content-wrapper .resume .left .skill:nth-child(2) .percent .progress{
     background: linear-gradient(45deg, #3bc0ff, #33ff00);
-    width: 70%;
+    width: 80%;
 }
 
 .content-wrapper .resume .left .skill:nth-child(3) .percent .progress{
     background: linear-gradient(45deg, #ffee54, #ff00ca);
-    width: 40%;
+    width: 60%;
 }
 
 .content-wrapper .resume .left .skill:nth-child(4) .percent .progress{
     background: linear-gradient(45deg, #ffee54, #ff00ca);
-    width: 50%;
+    width: 60%;
 }
 
 .content-wrapper .resume .left .skill:nth-child(5) .percent .progress{
@@ -304,7 +306,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100%;   
     width: 95%;
     border-radius: 10px;
     color: #fff;

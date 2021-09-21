@@ -27,6 +27,7 @@
 
 .content-wrapper .main li:hover{
     transform: scale(1.1);
+    color: rebeccapurple;
 }
 
 /* .content-wrapper .main li.active{
@@ -53,15 +54,13 @@
     font-size: 18px;
     position: relative;
     display: none;
-    transform: scale(0) rotate(360deg);
-    transition: all 0.75s;
 }
 
 .content-wrapper .answer-box li.active{
     display: flex;
-    transform: scale(1) rotate(0deg);
-    transition: all .5s;
 }
+
+
 
 .content-wrapper .answer-box li .info a{
     color: #ff6700;

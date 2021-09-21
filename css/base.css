@@ -42,7 +42,7 @@ body{
 }
 
 .header li a:hover{
-    color: #ff6700;
+    color: cyan;
 }
 
 
@@ -50,18 +50,22 @@ body{
 .content-wrapper .content .title{
     text-align: center;
     padding-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 
 /* ----------Footer Part ---------- */
 .footer-wrapper{
-    position: absolute;
-    bottom: 0;
     text-align: center;
     background-color: #333;
     color: #dcdcdc;
     height: 50px;
-    width: 100%;
+    width: 100%;    
     line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* position: absolute;
+    bottom: 0; */
 }

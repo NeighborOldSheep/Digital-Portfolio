@@ -1,0 +1,32 @@
+.content-wrapper{
+    text-align: center;
+    min-height: 100vh;
+}
+
+table{
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5)
+}
+
+table td{
+    padding: 10px;
+}
+
+table td:first-child{
+    background: #333;
+    color: white;
+    font-size:  20px;
+}
+
+table td:nth-child(2){
+    font-size: 18px;
+}
+
+table,thead,th,td{
+    border: 3px solid rgb(71, 71, 71);
+}
