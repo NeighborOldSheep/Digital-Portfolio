@@ -47,6 +47,11 @@ body{
 
 
 /* ----------info content---------- */
+
+.content-wrapper{
+    min-height: 100vh;
+} 
+
 .content-wrapper .content .title{
     text-align: center;
     padding-top: 50px;
