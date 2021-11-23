@@ -20,7 +20,7 @@ body{
 
 /* ---------- Header Part -----------*/
 .header-wrapper{
-    background-color: #333;
+    background-color: rgb(60,60,70);
     display: flex;
     height: 80px;
 }
@@ -38,11 +38,20 @@ body{
 }
 
 .header li a{
-    color: #dcdcdc;
+    color: rgb(77, 76, 76);
+    cursor: pointer;
+    transition: .5s;
+    transition-delay: clac(var(--i)*.1s);
+    font-weight: bold;
 }
 
 .header li a:hover{
-    color: cyan;
+   color: #fff;
+   text-shadow: 0 0 10px #fff,
+   0 0 20px #fff,
+   0 0 30px #fff,
+   0 0 50px #fff,
+   0 0 70px #fff
 }
 
 
@@ -52,12 +61,40 @@ body{
     min-height: 100vh;
 } 
 
-.content-wrapper .content .title{
+.content-wrapper .content h1{
     text-align: center;
     padding-top: 50px;
     margin-bottom: 60px;
+    text-transform: uppercase;
+    background-color: transparent;
+    /* animation: flicker 1.5s infinite alternate; */
 }
 
+@keyframes  flicker{
+    0%,18%,22%,25%,53%,57%,100%{
+        text-shadow: 
+        0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+    }
+    20%,24%,55%{
+        text-shadow: none;
+    }
+}
+
+/* .title:hover{
+    color: #333;
+    text-shadow: 
+    0 0 20px #fff,
+    0 0 30px rgba(76,201,240,1),
+    0 0 50px rgba(76,201,240,1),
+    0 0 70px rgba(76,201,240,1);
+} */
 
 /* ----------Footer Part ---------- */
 .footer-wrapper{

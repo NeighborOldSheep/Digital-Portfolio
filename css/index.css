@@ -11,10 +11,11 @@ h3{
     color: #cfd8dc;
     position: fixed;
     top: calc(50vh - 40px);
-    left: calc(50vw - 126px);
+    left: calc(50vw - 200px);
     font-size: 60px;
     cursor: pointer;
     transition: all 0.3s;
+    
 }
 
 h3:hover{

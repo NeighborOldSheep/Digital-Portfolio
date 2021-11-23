@@ -1,3 +1,6 @@
+.content-wrapper{
+    position: relative;
+}
 
 /* lefr side main info */
 .content-wrapper .info{
@@ -65,4 +68,48 @@
 
 .content-wrapper .info .right .img:hover{
     transform: scale(1.15);
+}
+
+
+/* 3D Text Cloud */
+#textCloud{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    margin: 20px auto 0;
+}
+
+#textCloud a{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+/* tag color */
+#textCloud .blue {
+    color: blue;
+}
+
+#textCloud .red {
+    color: red;
+}
+
+#textCloud .orange {
+    color: #f90;
+}
+
+#textCloud .pink {
+    color: #f6f;
+}
+
+#textCloud .black {
+    color: #333;
+}
+
+#textCloud .purple {
+    color: #90f;
 }

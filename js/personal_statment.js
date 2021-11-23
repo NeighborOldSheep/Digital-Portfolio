@@ -1,7 +1,10 @@
 window.onload = function () {
 
-    /* get all elements */
+    //after page finished load fadeout after 1 second.
+    $('.loader-wrapper').delay(1000).fadeOut('slow');
 
+    
+    /* get all elements */
     var li = document.querySelectorAll(".question");
     var answer = document.querySelectorAll(".answer");
     var main = document.getElementById("main");
@@ -61,7 +64,7 @@ window.onload = function () {
         }
 
     }
-
+    
 
 
 

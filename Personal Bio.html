@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,33 @@
     <title>Personal Bio</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/personal_Bio.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <!-- import jquery 2.14-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous">
+    </script>
+    <script src="js/personal_bio.js" defer></script>
 </head>
+
+<!-- Page loader -->
+<div class="loader-wrapper">
+    <div class="loader">
+        <span class="loader-inner"></span>
+    </div>
+</div>
+
+
 <body>
     <!-- Header -->
     <header class="header-wrapper">
         <ul class="header">
-            <li class="home"><a href="index.html">Home Page</a></li>
-            <li><a href="Personal Bio.html">Personal Bio</a></li>
-            <li><a href="Personal Statemnt.html">Personal Statement</a></li>
-            <li><a href="Career Video.html">Career Video</a></li>
-            <li><a href="Career Assessment.html">Career Assessment</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Life-After-High-School Goals.html">Life-After-High-School Goals</a></li> 
+            <li class="home"><a href="index.html" style="--i:1">Home Page</a></li>
+            <li><a href="Personal Bio.html" style="--i:2">Personal Bio</a></li>
+            <li><a href="Personal Statemnt.html" style="--i:3">Personal Statement</a></li>
+            <li><a href="Career Video.html" style="--i:4">Career Video</a></li>
+            <!-- <li><a href="Career Assessment.html">Career Assessment</a></li> -->
+            <li><a href="Resume.html" style="--i:5">Resume</a></li>
+            <!-- <li><a href="Life-After-High-School Goals.html">Life-After-High-School Goals</a></li> -->
         </ul>
     </header>
 
@@ -33,14 +49,14 @@
                     <!-- left side top info -->
                     <div class="top">
                         <p>Hello! Welcome to my WebPage!</p>
-                        <span>I'm a Web page designer</span>
+                        <span>I'm a Web Development</span>
                     </div>
                     <!-- mian info -->
                     <div class="main-info">
                         <ul>
                             <li>
                                 <span class="title">Name: </span>
-                                <span class="name">Cole Yang</span>
+                                <span class="name">Hongchen Yang</span>
                             </li>
                             <li>
                                 <span class="title">D.O.B: </span>
@@ -67,12 +83,27 @@
                 </div>
             </div>
         </div>
+        
+        <div id="textCloud">
+            <a href="" class="black">Python</a>
+            <a href="" class="pink">JavaScript</a>
+            <a href="" class="blue">HTML</a>
+            <a href="" class="purple">CSS</a>
+            <a href="" class="orange">Django</a>
+            <a href="" class="red">Selenium</a>
+            <a href="" class="red">Photo Shop</a>
+            <a href="" class="pink">C</a>
+            <a href="" class="orange">Beautiful Soup</a>
+            <a href="" class="blue">Request</a>
+        </div>
     </div>
+    
+    
 
     <!-- footer -->
     <footer class="footer-wrapper">
         Copyright © Hongchen Yang
     </footer>
-
 </body>
+
 </html>

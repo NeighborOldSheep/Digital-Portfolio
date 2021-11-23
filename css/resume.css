@@ -2,6 +2,10 @@ body{
     min-height: 100vh;
 }
 
+.content-wrapper{
+    position: relative;
+}
+
 .content-wrapper .content .title{
     margin-bottom: 0;
 }
@@ -321,7 +325,7 @@ body{
 
 .content-wrapper .resume .right .skill:nth-child(2) .percent .progress{
     background: linear-gradient(45deg, #3bc0ff, #33ff00);
-    width: 65%;
+    width: 85%;
 }
 
 /* Experience */
