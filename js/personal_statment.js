@@ -3,15 +3,15 @@ window.onload = function () {
     //after page finished load fadeout after 1 second.
     $('.loader-wrapper').delay(1000).fadeOut('slow');
 
-    
+
     /* get all elements */
-    var li = document.querySelectorAll(".question");
+    var li = document.querySelectorAll(".blog-slider_button");
     var answer = document.querySelectorAll(".answer");
-    var main = document.getElementById("main");
+    var main = document.getElementById("blog-slider");
     var content = document.getElementById("content-wrapper");
     var btn = document.querySelectorAll(".close");
 
-
+    console.log(li);
     var index = 0;
 
     /* loop to get every question & answer elements */
@@ -20,7 +20,7 @@ window.onload = function () {
         //为每一个超链接都添加一个num属性
         li[i].num = i;
 
-        
+
         /* 
             为超链接绑定单机响应函数：
                 当li被点击时 
@@ -33,7 +33,7 @@ window.onload = function () {
 
             /* 获取当前点击的索引并将其为设置为index */
             index = this.num;
-            
+
             //遍历获取所有answe
             for (var j = 0; j < answer.length; j++) {
                 answer[index].classList.add("active");
@@ -64,8 +64,20 @@ window.onload = function () {
         }
 
     }
-    
 
+    var swiper = new Swiper('.blog-slider', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        mousewheel: {
+            invert: false,
+        },
+
+        pagination: {
+            el: '.blog-slider_pagination',
+            clickable: true,
+        }
+    });
 
 
 }

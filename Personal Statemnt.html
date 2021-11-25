@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Statment</title>
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/personal_statment.css">
     <link rel="stylesheet" href="css/loader.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css'>
+    <link rel="stylesheet" href="css/personal_statment.css">
     <!-- import jquery 2.14 fadeout feature -->
     <script src="js/personal_statment.js" defer></script>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"
         integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous">
-    </script> 
-    
+        </script>
 </head>
 
 <!-- Page loader -->
@@ -32,7 +32,7 @@
             <li class="home"><a href="index.html">Home Page</a></li>
             <li><a href="Personal Bio.html">Personal Bio</a></li>
             <li><a href="Personal Statemnt.html">Personal Statement</a></li>
-            <li><a href="Career Video.html">Career Video</a></li>
+            <li><a href="work.html">Work</a></li>
             <!-- <li><a href="Career Assessment.html">Career Assessment</a></li> -->
             <li><a href="Resume.html">Resume</a></li>
             <!-- <li><a href="Life-After-High-School Goals.html">Life-After-High-School Goals</a></li> -->
@@ -40,116 +40,204 @@
     </header>
 
 
-
-
     <!-- Content -->
     <div class="content-wrapper" id="content-wrapper">
         <div class="content">
             <!-- title -->
             <h1 class="title">Personal Statament</h1>
-            <!-- Question Box -->
-            <ul class="main" id="main">
-                <li class="question">Q1: What would you say is your greatest talent or skill?
-                    How have you developed and demonstrated that talent over time?</li>
-                <li class="question">Q2: Think about an academic subject that inspires you.
-                    Describe how you have furthered this interest inside and/or outside of the classroom.</li>
-                <li class="question">Q3: What have you done to make your school or your community a better place?</li>
-                <li class="question">Q4. Describe the most significant challenge you have faced and the steps you have
-                    taken to overcome this challenge. How has this challenge affected your academic achievement?</li>
-            </ul>
+            <!-- 卡片设计 -->
+            <div class="blog-slider" id="blog-slider">
+                <div class="blog-slider_wrp swiper-wrapper">
+
+                    <div class="blog-slider_item swiper-slide">
+                        <div class="blog-slider_img">
+                            <img src="img/leadership.png" alt="leadership">
+                        </div>
+                        <div class="blog-slider_content">
+                            <span class="blog-slider_code">21 August 2021</span>
+                            <div class="blog-slider_title">Leadership</div>
+                            <div class="blog-slider_text">Describe an example of your leadership experience in which you
+                                have positively influenced others, helped resolve disputes, or contributed to group
+                                efforts over time.
+                            </div>
+                            <a href="#" class="blog-slider_button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- 相同的格式，复制了两次，修改自己需要的内容 -->
+                    <div class="blog-slider_item swiper-slide">
+                        <div class="blog-slider_img">
+                            <img src="img/community.png" alt="community">
+                        </div>
+                        <div class="blog-slider_content">
+                            <span class="blog-slider_code">21 August 2021</span>
+                            <div class="blog-slider_title">Creative Side</div>
+                            <div class="blog-slider_text">High frame rates mean high win rates on a laptop powered by
+                                the
+                                world’s best mobile processor for gamers.</div>
+                            <a href="#" class="blog-slider_button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider_item swiper-slide">
+                        <div class="blog-slider_img">
+                            <img src="img/talent.png" alt="talent">
+                        </div>
+                        <div class="blog-slider_content">
+                            <span class="blog-slider_code">21 August 2021</span>
+                            <div class="blog-slider_title">Greatest Talent</div>
+                            <div class="blog-slider_text">What would you say is your greatest talent or skill? How have
+                                you developed
+                                and demonstrated that talent over time?
+                            </div>
+                            <a href="#" class="blog-slider_button">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-slider_item swiper-slide">
+                        <div class="blog-slider_img">
+                            <img src="img/physics.png" alt="physics">
+                        </div>
+                        <div class="blog-slider_content">
+                            <span class="blog-slider_code">21 August 2021</span>
+                            <div class="blog-slider_title">Artificial Intelligence</div>
+                            <div class="blog-slider_text">Describe the most significant challenge you have faced and the
+                                steps you have taken to overcome this challenge. How has this challenge affected your
+                                academic achievement?
+                            </div>
+                            <a href="#" class="blog-slider_button">READ MORE</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="blog-slider_pagination"></div>
+            </div>
+
             <!-- Answer Box -->
             <ul class="answer-box">
                 <li class="answer">
                     <div class="info">
-                        For me the top three talents or skills are play piano, coding and cooking.
-                        The greatest talent for me is coding. I learn it by myself, it's very hard when I just start
-                        learning it, this skill is something that is not developed in a day. First time I was learned
-                        C++ at 8th grade, at that time I don't even not what does function meaning, and I give up at
-                        pointer. Half a year later I started learning Python. It's much easier than C++. At that time
-                        I'm 9th grade. I used half a year to learn the syntax, and then started learning WebSpider. At
-                        that time I felt like coding is really fun stuff, I wrote a script for bilibili steamer studio
-                        to automatically send text, you can edit the text you want to send and it will send by the time
-                        it ends. When I became a sophomore I was interested in cyber security. I learned some basic
-                        knowledge about how to find a bug on a website, and I found a single XSS bug in a small website,
-                        which I am very proud of myself. In August 2020 I will start a new journey for coding, which is
-                        to build a website for our club. Then I learned Javascript, HTML/CSS and I did it, the website
-                        is a static and publish on Google(<a
-                            href="https://neighboroldsheep.github.io/AHS_MIC/index.html">https://neighboroldsheep.github.io/AHS_MIC/index.html</a>)
-                        right
-                        now I'm learning a Python Django framework try to build a dynamic website.
-                    </div>
-                    <div class="close">X</div>
-                <li class="answer">
-                    <div class="info">
-                        During the school years Physics is a subject that inspires me a lot. In the class I learned how
-                        to properly study a subject, especially a subject related to Math. For example if one day is
-                        like a tree, the time is water when you pour the water to the tree, you should pour to the root
-                        only this way can let tree growth up, same logic with study, that tree is subject water is time,
-                        only when you use spent time to study that subject, which the tree can growth up. When you study
-                        you should always have a friend who can help you. Sometimes there are always difficult questions
-                        to deal with, when you study with your friend that can be quickly solved, during that solving
-                        process you will learn a lot. Beside the class, I also learned that time management is
-                        important. One day only has 24 hours, it's really important to learn how to distribute those
-                        times. You can watch TV or play video games all time, but you wouldn't learn anything from
-                        watching TV and playing video games. However, if you properly distribute the time then success
-                        is not far for you. For example you decide study at sunday, which before sunday the schedule
-                        need to be complete what time you should do what things, if you keep doing this everyday after
-                        long time those schedule will automatically generate at you mind,then only one thing you need to
-                        do is take action, you have plan you have a goal then you only need to take action and achieve
-                        it.
-                    </div>
-                    <div class="close">X</div>
-                <li class="answer">
-                    <div class="info">
-                        One thing I did to make my school better is create a Chinese Club called M.I.C(Multi-Cultural
-                        Interaction of China). We know that America is an immigrant country, which means in a school
-                        there should have lots of immigrant students, they might come from different countries. M.I.C
-                        club gives all chinese immigrants a "home" in campancy, in the club they can make lots of new
-                        friends, even some people just come to our school M.I.C club can help them as fast as possible
-                        to adapt to this new environment. In M.I.C club we have lots of activities and hang out events,
-                        we organize to eat some traditional chinese food, and play some chinese games to improve each
-                        other's emotions. Also, our club has leadership provided to our members, that way they will have
-                        some opportunity to apply to become some leader to exercise their leadership skill, try to
-                        organize activity,learn how to manage a club,if I graduate they will have chance to reopen this
-                        club, since they already know lots thing about this club. Beside my club I also pick up trash to
-                        clean up our community. Since my Government topic is Global warming, I need to sign up for some
-                        volunteer activity to pick up some trash at the beach to protect our environment . Also if I
-                        have a chance I will propagate to other people rather throw trash away you should throw into the
-                        trans can.
+                        I have been working as a president of my high school club called Multicultural Interaction of
+                        China since September of 2020. To establish a good atmosphere and relationship among club
+                        members, I have organized three online electric sports events from October 2020 to April 2021.
 
-                    </div>
-                    <div class="close">X</div>
+                        The idea of organizing online events came to my mind when we had routine meetings among club
+                        leaders. I found it hard to get close to most of the club members because of the pandemic.
+                        Therefore, I came up with the idea to play popular phone games to have members be involved. I
+                        set up a meeting among leaders to decide which game to play. Opinions differed, so I suggested
+                        voting for the final decision. At the end of the session, we chose Honor of Kings, famous both
+                        in China and America. For other ideas, we discussed using them for later events to diversify the
+                        content of events. While preparing the event, I divided the entire work into parts, including
+                        register, publicity, and execution. To avoid external assistance to make the game unfair, I
+                        asked the registering member to set up a registering form including personal information to
+                        check at the beginning of the game. I arranged publicity plans with poster design and posted
+                        them on the club website to get more attention from club members. The art chair designed a
+                        poster containing attractive game information and prize for winners. When the game started, the
+                        vice president and I were in charge of controlling the entire situation. Another leader was
+                        involved in recording climax moments and results to present on the club website and send to
+                        members. At the end of the game, the winner was announced with a special prize. Other
+                        participators got the bonus to have discounts on milk tea in which milk tea shop sponsored the
+                        club.
+
+                        With my effort to lead my leader team to organize well, this online event was unexpectedly
+                        successful so that more club members would like to participate and look forward to later
+                        activities.
+
+                        <div class="close">X</div>
+                </li>
                 <li class="answer">
                     <div class="info">
-                        One thing I challenge myself is to take AP Physics 1 & AP Physics 2 in junior years.
-                        It was very hard when the class just began. I didn't learn well in the first few chapters.
-                        Usually I get a F or D on the test, luckily in the AP Physics class we have a curve to help us
-                        don't fail the class. I start rewriting my previous test every single day until the first
-                        semester final comes. Some test questions my Physics teacher makes are really difficult to
-                        solve, but he tells us if you think the question is difficult, rewrite it, after rewriting
-                        hundreds of thousands of times it will automatically become easier. "When things are easy you
-                        redo it, when things become hard you practice when it is easy." I remember this sentence and
-                        study really hard with my friend. When class ends we usually start our own zoom meeting to do
-                        the homework, explain problems to each other. Finally, the first semester final is coming. There
-                        are two parts of the test, free response and multiple choice. For me, the free response part is
-                        kind of ok, but the multiple choice part is too hard. The whole class average is 18/35, the
-                        final grade for the first semester is a C. During the winter break I feel like I should study
-                        more hard, I start search problem online during winter break I spend 3 hours everyday to study
-                        Physics, redo old test, search some multiple choice question to practice my weakness part.
-                        FInally the AP test and second semester final will be coming. Last month I spent 5.5 hours
-                        everyday with my friend to do physics problems and understand each topic. Finally, all the work
-                        I did was a gift for me, my second semester, both AP Physics gardes is a B, both AP Tests I
-                        passed! I was very excited, all the work I did was worth it. This is how I overcame this
-                        challenge during my school.
+                        I believe that I am a person with a creative side in computer science and able to solve facing
+                        problems with innovative thinking. I have discovered my creation while learning Computer Science
+                        both at the college course and self-improvement learning. To utilize skills and programming
+                        capacities in the practical section, I started to look for opportunities in my life and campus
+                        work. As I became the president of the MIC club in my high school, I found there was a lack of
+                        information presentation methods to record significant events and publicize the club. Combining
+                        my interest and acquirement in programming and computer science studies, I decided to create a
+                        website.
+
+                        At the beginning of the website building, I faced challenges though I have practiced a lot since
+                        I started my CS learning, such as the difference between a club website from an e-commerce
+                        website I have attempted to make before. I researched various designs of web pages for
+                        navigation bars, layout, and submenu settings. After that, I analyzed the usages of my club
+                        website, which I knew the best. Later as I have built up the primary website, I found some user
+                        interfaces seemed dull without transition and special effects. So I worked to optimize the code
+                        to provide multiple submenus and pages for users. Moreover, the slow loading speed of pictures
+                        has been solved using my previous studies on coding and programming. Apart from improving on
+                        professional coding aspects, I have asked for advice among club members to set up unique columns
+                        such as specialized event register entrance and communication section to increase more
+                        connection among members for a better relationship during the pandemic and long term development
+                        of the club.Therefore, our club has been developed rapidly on campus with immediate updated
+                        information and a friendly online environment.
 
                     </div>
                     <div class="close">X</div>
                 </li>
+                <li class="answer">
+                    <div class="info">
+                        Throughout my entire school life, I found myself with autonomous learning ability. I constantly
+                        yearn to search for brand-new knowledge in areas I am interested in. I would not be satisfied
+                        with fundamental points I have earned from classes or books but attempt to research deeply for
+                        more.
+                        The most outstanding example could be my independent studies on coding and programming. The
+                        first time I got in touch with coding and programming was the C++ course in eighth grade. We
+                        were taught fundamental theories about coding and the general process of building HTML websites.
+                        I was strongly attracted, so that I expected more out of the class. Thus, I searched online for
+                        related teaching videos and books on YouTube or Bilibili, famous in China for self-learning.
+                        After half-year learning, I acquired skills such as web spider and Python crawler. I have spent
+                        most of my spare time experimenting with my learning result. So I have tried to code some
+                        automated tools, including automated crawl for novels, information in online shops, automated,
+                        simultaneous comments typing. At that time, I worked as an organizer of an online study room on
+                        Bilibili to open live music and background sound and accompany people. To encourage them, I
+                        coded automated, simultaneous comments typing on the live video to encourage people to study in
+                        the online live room.
+                        Since I practiced the basic coding process, I expected to learn more specific aspects of
+                        Computer Science. Therefore, I purchased lessons about web development. As my self-studies
+                        continued, I found it a general and helpful area in Computer Science that I would like to keep
+                        working on. I even used my current skills to build up an original club website for my MIC club.
+                        Along with practical work, I still learned Javascript, HTML/CSS to improve the website. My
+                        strong autonomous learning ability also affected my future major and career decision to study
+                        Computer Science at the university and work in software engineering for my career goal.
+
+                    </div>
+                    <div class="close">X</div>
+                </li>
+                <li class="answer">
+                    <div class="info">
+                        The most significant challenge I have faced was taking AP Physics 1 & AP Physics 2 in junior
+                        years. The previous test results were in a mess, and it was hard to understand the lesson with a
+                        lack of fundamental physics background well established in former semesters. I was depressed and
+                        stuck in the situation to overcome it as our physics teacher reminded us to set up an
+                        appropriate goal and keep working for it. He compared the studies of physics problems to growing
+                        trees, and it was crucial to aim at the root for watering, which is like figuring out individual
+                        capacities and repeatedly working for it. He said that when things are easy, you redo it; when
+                        things become challenging, you practice when it is easy, which strongly inspired me.
+                        With the inspiration of the physics teacher, I started to brace myself up. First, I collected
+                        previous test papers we did the last term to do it again daily. Furthermore, I invited one of my
+                        friends to accompany me. We made a study pair to encourage each other. Every afternoon after the
+                        class, we open a zoom meeting to do homework, explain problems to each other. We collected
+                        mistakes we made in a file to review every day as a routine. Multiple choice and free response
+                        parts were two main difficulties to overcome in the final test. With slight improvement but
+                        still unsatisfied results, we constantly worked harder in the winter break. I spent three hours
+                        studying Physics, redid the old tests, and searched for some multiple-choice questions online to
+                        practice my weakness. Even before the AP test and second semester final, my friend and I spent
+                        extra five hours a day working on specific physics problems.
+
+                        As a result, the result for the second semester raised a grade with all AP tests passed. Thus,
+                        to look back on my studies, I become firmly assured that I could be one with the accurate
+                        academic aim and constantly work for it to achieve my long-term educational and career goal.
+
+
+                    </div>
+                <div class="close">X</div>
+            </li>
             </ul>
         </div>
 
     </div>
-
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js'></script>
     <!-- footer -->
     <footer class="footer-wrapper">
         Copyright © Hongchen Yang
